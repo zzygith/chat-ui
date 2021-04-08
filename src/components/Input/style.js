@@ -1,16 +1,25 @@
 import styled, { css } from 'styled-components'
 
-const Styledinput = styled.input`
+const Styledinput = styled.input(props => css`
+display:block;
 width:100%;
 height:48px;
 border:none;
 background:none;
+color:${props.grayDark};
+&::placeholder{
+    color:${props.grayDark};
+}
 
+`)
+
+const Prefix = styled.div`
+margin-right:16px
 `;
 
-const Prefix = styled.div``;
-
-const Suffix = styled.div``;
+const Suffix = styled.div`
+margin-left:16px;
+`;
 
 const InputContainer = styled.div`
 display:flex;

@@ -9,6 +9,7 @@ export default {
 
 
 export const Defualt = () => <Input />
+export const Search = () => <Input.Search />
 
 
 

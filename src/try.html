@@ -9,12 +9,21 @@
 </head>
 <body>
    <script>
-       const re=`${()=>'li'}`;
-       console.log(re);
-       const ss=`front-size:20px`
-       console.log(ss);
-       const a=false;
-       console.log(a?1:2);
+  function fll(...arg){
+        let a=[...arg];
+        const ob={
+               chui:a,
+               getValue: function(){
+                   return this.chui
+               }
+  
+            }
+
+               
+               return ob
+            }
+            console.log(fll(1,2).getValue());
+
    </script>
 
 </body>
