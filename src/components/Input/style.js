@@ -6,9 +6,10 @@ width:100%;
 height:48px;
 border:none;
 background:none;
-color:${props.grayDark};
+color:${props.theme.grayDark};
+font-size:${props.theme.medium};
 &::placeholder{
-    color:${props.grayDark};
+    color:${props.theme.grayDark};
 }
 
 `)
