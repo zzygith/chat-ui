@@ -25,6 +25,7 @@ export default {
     xxlarge: "24px",
     small: "12px",
     xsmall: "10px",
-    xxsmall: "8px",
+  xxsmall: "8px",
+    nee:"10px"
   };
   
