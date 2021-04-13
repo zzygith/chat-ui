@@ -26,6 +26,7 @@ export default {
     small: "12px",
     xsmall: "10px",
   xxsmall: "8px",
-    nee:"10px"
+    nee:"10px",
+    ano:"11px"
   };
   
