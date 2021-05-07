@@ -18,7 +18,7 @@ function Input({placeholder="Enter for search", prefix, suffix, ...rest }) {
 
 function Search({ placeholder = "Enter for search", ...rest }) {
     return (
-        <Input placeholder={placeholder}  prefix={ <Icon icon={SearchIcon} color='black' width={18} height={18} />} />
+        <Input placeholder={placeholder}  prefix={ <Icon icon={SearchIcon} color='Gray' width={18} height={18} />} />
     )
 }
 

@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
 
 const Styledinput = styled.input(props => css`
+outline:none;
 display:block;
 width:100%;
 height:48px;

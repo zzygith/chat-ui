@@ -25,9 +25,13 @@ export default {
     xxlarge: "24px",
     small: "12px",
     xsmall: "10px",
-  xxsmall: "8px",
+    xxsmall: "8px",
     nee:"10px",
     ano:"11px",
-    anoo:"12px"
+    anoo: "12px",
+    annoow: "123px",
+    sdh: "23px",
+    sda:"sda22",
+    sdsds:"1229px"
   };
   
