@@ -22,8 +22,8 @@ Text.propTypes = {
     'xsmall',
     'xxsmall',]),
     bold: PropTypes.bool
-
 }
+
 
 export default Text
 
