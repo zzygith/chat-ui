@@ -6,9 +6,6 @@ ${props => props.ellipsis && css`
 text-overflow:ellipsis;
 white-space:nowrap;
 overflow:hidden;
-margin:0;
-padding:0;
-box-sizing:border-box
 `}
 `;
 export default StyledParagraph;

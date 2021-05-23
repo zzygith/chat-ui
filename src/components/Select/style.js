@@ -9,6 +9,7 @@ const StyledSelect = styled.select`
     background-color: transparent;
     padding-right:14px;   //padding will put up box, so backimage will move
     border:none;
+    outline:none;
     font-size:${props => props.theme.normal};
     color:${props=>props.theme.grayDark}
 

@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled, { css } from 'styled-components'
-import { activeBar } from '../../utils/minins';
+import { activeBar } from '../../utils/mixins';
 import StyledAvatar, {StatusIcon} from '../Avatar/style';
 
 const StyledMenuItem = styled.div`

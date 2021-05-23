@@ -11,6 +11,7 @@ function Filter({children, ...rest }) {
     )
 }
 
+// These two components will be used as children of Filter component
 Filter.Filters = ({children, label, ...rest}) => (
     <Filters {...rest}>
         <Text type="secondary">{label}:&nbsp;&nbsp;</Text>
