@@ -50,7 +50,7 @@ const StyledMessageCard = styled.div`
         box-shadow:0px 20px 50px rgba(0,0,0,0.1);
     };
     ${StyledAvatar} {
-    grid-area: avatar;
+      grid-area: avatar;
     };
     ${props => props.active && css`
       background-color:${props => props.theme.darkPurple};
@@ -62,7 +62,7 @@ const StyledMessageCard = styled.div`
       }
       ${activeBar({barwidth:'4px', shadowWidth:'14px'})}
     `}
-      overflow: hidden;
+    overflow: hidden;
 
 `;
 export default StyledMessageCard;
