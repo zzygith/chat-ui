@@ -8,7 +8,7 @@ export default {
 };
 
 
-export const Defualt = () => <Input />
+export const Defualt = () => <Input placeholder="ererere"/>
 export const Search = () => <Input.Search />
 
 

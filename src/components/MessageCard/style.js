@@ -8,8 +8,9 @@ import StyledAvatar from '../Avatar/style';
 
 const Name = styled(Text).attrs({ size: 'large' })`
     grid-area: name;
-`; //Inherit the Text component and set size attribute
+`;
 
+//Inherit the Text component and set size attribute
 const Time = styled(Text).attrs({ size: 'medium', type: 'secondary' })`
     grid-area: time;
     justify-self:end;

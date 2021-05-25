@@ -10,7 +10,7 @@ background:none;
 color:${props.theme.grayDark};
 font-size:${props.theme.medium};
 &::placeholder{
-    color:${props.theme.grayDark};
+    color:${props.theme.gray3};
 }
 
 `)
