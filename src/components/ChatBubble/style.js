@@ -41,7 +41,7 @@ const typeVariants = {
             right:0;  // Move the Icon the right
             path{
                 fill:${props=>props.theme.primaryColor}; // Change the color of the Icon
-            }
+            };
         };
         ${Time}{
             text-align: right;
