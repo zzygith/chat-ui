@@ -6,7 +6,10 @@ import Profile from '../Profile';
 function EditProfile({ ...rest }) {
     const [showEdit, setShowEdit] = useState(false);
     if (!showEdit) {
-        return <Profile showCloseIcon={false}/>
+        return <Profile
+            onEdit={() => setShowEdit(true)}
+            showEditBtn={true}
+            showCloseIcon={false} />
     }
     return (
         <Profile />
