@@ -26,6 +26,9 @@ const sizeVariants = {
     xlarge: css`
     ${props=>props.theme.xlarge}
     `,
+    xxlarge: css`
+    ${props=>props.theme.xxlarge}
+    `,
     small: css`
     ${props=>props.theme.small}
     `
