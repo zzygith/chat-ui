@@ -9,7 +9,7 @@ export default {
 };
 
 
-export const Defualt = () => (<Select>
+export const Defualt = () => (<Select label="Adress">
 <Option>弟弟阿迪斯阿呆反腐败</Option>
 <Option>弟撒打发点撒反腐败</Option>
 </Select>)
