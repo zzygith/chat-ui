@@ -1,7 +1,6 @@
 import React from 'react'
 import Input from "."
 
-
 export default {
     title: "Input",
     component: Input
@@ -10,6 +9,6 @@ export default {
 
 export const Defualt = () => <Input placeholder="ererere"/>
 export const Search = () => <Input.Search />
-
+export const InputTextWithLabel= ()=><Input.Text label="Name"/>;
 
 

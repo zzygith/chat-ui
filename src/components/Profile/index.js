@@ -11,11 +11,11 @@ import photo2 from '../../assests/images/photo2.jpg'
 import photo3 from '../../assests/images/photo3.jpg'
 import {ReactComponent as Cross} from '../../assests/icons/cross.svg'
 
-function Profile({ ...rest }) {
+function Profile({showCloseIcon=true, status,  ...rest }) {
     return (
         <StyledProfile {...rest} >
-            <CloseIcon icon={Cross}/>
-            <Avatar style={{margin:"26px 0"}} src={face} size="160px" status="online" StatusIconSize="25px" />
+            {showCloseIcon && <CloseIcon icon={Cross}/>}
+            <Avatar style={{margin:"26px 0"}} src={face} size="160px" status={status} StatusIconSize="25px" />
             <Paragraph style={{ marginBottom: "12px" }} size="xlarge">Donald Johnson</Paragraph>
             <Paragraph style={{marginBottom:"18px"}} size="medium" type="secondary">Paris, France</Paragraph>
             <Paragraph style={{ marginBottom: "26px" }}>Help people to build websites and apps + grow awareness in social media</Paragraph>

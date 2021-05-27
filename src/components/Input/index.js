@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Styledinput, { Prefix, Suffix, InputContainer } from './style'
 import Icon from '../Icon/index'
+import InputText from './InputText/index'
 import {ReactComponent as SearchIcon} from '../../assests/icons/search.svg' 
 
 function Input({placeholder="Enter for search", prefix, suffix, ...rest }) {
@@ -11,8 +12,6 @@ function Input({placeholder="Enter for search", prefix, suffix, ...rest }) {
             <Styledinput placeholder={placeholder} />
             {suffix && <suffix>{ suffix }</suffix>}
         </InputContainer>
-
-
     )
 }
 
@@ -22,14 +21,14 @@ function Search({ placeholder = "Enter for search", ...rest }) {
     )
 }
 
-Input.Search = Search;
+Input.Search = Search; // It is used for search bar.
+Input.Text = InputText; // It is used for changing personal information.
 
 Input.propTypes = {
     placeholder: PropTypes.string,
     prefix: PropTypes.any,
     suffix:PropTypes.any,
-
 }
 
-export default Input
+export default Input;
 

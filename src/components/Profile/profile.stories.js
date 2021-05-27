@@ -8,7 +8,7 @@ export default {
 };
 
 
-export const Defualt = () => <Profile />
+export const Defualt = () => <Profile status="online"/>
 
 
 
