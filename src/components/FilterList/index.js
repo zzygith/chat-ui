@@ -17,11 +17,9 @@ function FilterList({children, options,actionLabel, filterLabel="Sort By", ...re
                 {options && (
                 <Filter.Filters label={filterLabel}>
                     <Select>
-                        <Option>Latest First</Option>
-                        <Option>Online First</Option>
-                    </Select>
+                        {options.map((option, index) => (<Option key={index}>{option}</Option>))}
+                    </Select>    
                 </Filter.Filters>)}
-                
                 {actionLabel && (
                 <Filter.Action label={actionLabel}>
                     <Button>
