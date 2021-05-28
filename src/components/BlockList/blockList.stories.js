@@ -8,7 +8,7 @@ export default {
 };
 
 
-export const Defualt = () => <BlockList>默认</BlockList>
+export const Defualt = () => <BlockList/>
 
 
 

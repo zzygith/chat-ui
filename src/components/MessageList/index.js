@@ -11,13 +11,14 @@ import ChatList from "./style"
 import { ReactComponent as Plus } from "../../assests/icons/plus.svg";
 import MessageCard from '../MessageCard';
 import face1 from "../../assests/images/face-male-1.jpg"
+import FilterList from '../FilterList'
 
 function MessageList({children, ...rest }) {
     return (
         <StyledMessageList {...rest} >
-            <Input.Search />
-            <ChatFilter />
-            <Chatlist>
+
+            <FilterList options={ ["Latest First", "Online First"] } actionLabel="Add New">
+                <Chatlist>
                 {
                     [1, 2, 3, 4, 5, 6].map((_, index) => (
                         <MessageCard
@@ -34,32 +35,33 @@ function MessageList({children, ...rest }) {
                         />
                     ))
                 }
-            </Chatlist>
+                </Chatlist>
+            </FilterList>
         </StyledMessageList>
     )
 }
-
+/* 
 function ChatFilter() {
     return (
-<Filter>
-        <Filter.Filters label="Sort By">
-            <Select>
-                <Option>Latest First</Option>
-                <Option>Online First</Option>
-            </Select>
-        </Filter.Filters>
+        <Filter styled={{padding:"20px 0"}}>
+                <Filter.Filters label="Sort By">
+                    <Select>
+                        <Option>Latest First</Option>
+                        <Option>Online First</Option>
+                    </Select>
+                </Filter.Filters>
 
-        <Filter.Action label="Add New">
-            <Button>
-                <Icon icon={Plus} width={12} height={12} color="white" />
-            </Button>
-        </Filter.Action>
-</Filter>
+                <Filter.Action label="Add New">
+                    <Button>
+                        <Icon icon={Plus} width={12} height={12} color="white" />
+                    </Button>
+                </Filter.Action>
+        </Filter>
 
 
     )
 }
-
+ */
 MessageList.propTypes = {
 
 }
