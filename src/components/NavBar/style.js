@@ -29,10 +29,10 @@ const StyledNavBar = styled.nav`
   width: 100px;
   height: 100vh;
   background-color:#292F4C;
-  padding: 30px 0;
 
   ${StyledAvatar} {    //设置StyledNavBar里面Avatar的样式，就是选中styled-component包装过得组件，不是avatar本身（因为从本质上讲，avatar组件执行后返回了一堆styled组件，其实是不存在avatar组件的）
     justify-self: center;
+    align-self: center;
     ${StatusIcon} {
       &::before {
         background-color:#292F4C;

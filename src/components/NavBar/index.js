@@ -6,7 +6,7 @@ import Avatar from '../Avatar/index'
 import profileImage from '../../assests/images/face-male-1.jpg'
 import { faCommentDots, faFolder, faStickyNote, faUser } from '@fortawesome/free-regular-svg-icons'
 import { faCog, faEllipsisH } from '@fortawesome/free-solid-svg-icons'
-import "styled-components/macro"
+
 
 function NavBar({ ...rest }) {
     return (
@@ -18,7 +18,7 @@ function NavBar({ ...rest }) {
                 <MenuItem icon={faFolder} />
                 <MenuItem icon={faStickyNote} />
                 <MenuItem icon={faEllipsisH}/>
-                <MenuItem icon={faCog} css={ `align-self: end` } />
+                <MenuItem icon={faCog} style={{ alignSelf: "center"}} />
             </MenuItems>
         </StyledNavBar>
     )
@@ -28,7 +28,7 @@ function MenuItem({ icon, active, showBage, ...rest }) {
         <StyledMenuItem active={active} {...rest}>
             <a href="#">
                 <Badge show={showBage}>
-                    <MenuIcon active={active} icon={icon} />
+                    <MenuIcon active={active?1:0} icon={icon} />
                 </Badge>
             </a>
         </StyledMenuItem>

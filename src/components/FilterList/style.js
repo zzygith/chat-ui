@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 const StyledFilterList = styled.div`
-    padding: 30px;
+    padding: 15px;
     height: 100vh;
     overflow:auto;
 `;

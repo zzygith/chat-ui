@@ -10,7 +10,7 @@ function Input({placeholder="Enter for search", prefix, suffix, ...rest }) {
         <InputContainer {...rest}>
             {prefix && <Prefix>{ prefix }</Prefix>}
             <Styledinput placeholder={placeholder} />
-            {suffix && <suffix>{ suffix }</suffix>}
+            {suffix && <Suffix>{ suffix }</Suffix>}
         </InputContainer>
     )
 }

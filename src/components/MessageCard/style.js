@@ -6,7 +6,7 @@ import {card, activeBar} from '../../utils/mixins'
 import StyledAvatar from '../Avatar/style';
 
 
-const Name = styled(Text).attrs({ size: 'large' })`
+const Name = styled(Text).attrs({ size: 'normal' })`
     grid-area: name;
 `;
 
@@ -45,7 +45,7 @@ const StyledMessageCard = styled.div`
         "avatar status status"
         "message message message";
     grid-template-columns:64px 1fr 1fr;
-    row-gap:16px;
+    row-gap:8px;
     transition:0.4s;
     &:hover{
         box-shadow:0px 20px 50px rgba(0,0,0,0.1);
