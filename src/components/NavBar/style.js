@@ -11,14 +11,27 @@ const StyledMenuItem = styled.div`
     align-items: center;    
     justify-content: center;
     ${activeBar()};
-    ${(props) => (props.active ? "" : `::before,::after {height:0}`)}
+    ${(props) => (props.active ? "" : `::before,::after {height:0}`)};
+    &:hover{
+      ::before,::after{
+        height: 100%;
+      };
+    svg{
+      transform: scale(1.2);
+      opacity: 1;
+
+    };
+
+    }
 }
 `;
 
 const MenuIcon = styled(FontAwesomeIcon)`
-color:white;
-font-size:24px;
-opacity:${props=>(props.active?1:0.3)};
+  color:white;
+  font-size:24px;
+  opacity:${props => (props.active ? 1 : 0.3)};
+  transform: scale(1);
+  transition: 0.4s;
 `;
 
 

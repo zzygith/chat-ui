@@ -14,13 +14,15 @@ import Option from '../Option';
 
 function EditProfile({ children, ...rest }) {
     const [showEdit, setShowEdit] = useState(false);
+
     if (!showEdit) {
-      return (
-        <Profile
-            onEdit={() => setShowEdit(true)}
-            showEditBtn
-            showCloseIcon={false}
-        />
+        return (
+            <Profile
+                onEdit={() => setShowEdit(true)}
+                showEditBtn
+                showCloseIcon={false}
+            />  
+
       );
     }
     return (

@@ -12,8 +12,11 @@ import { ReactComponent as Plus } from "../../assests/icons/plus.svg";
 import MessageCard from '../MessageCard';
 import face1 from "../../assests/images/face-male-1.jpg"
 import FilterList from '../FilterList'
+import {animated} from 'react-spring'
+import useStaggeredList from '../../hooks/useStaggeredList';
 
-function MessageList({children, ...rest }) {
+function MessageList({ children, ...rest }) {
+    const trailAnimes = useStaggeredList(6);
     return (
         <StyledMessageList {...rest} >
 
@@ -21,18 +24,21 @@ function MessageList({children, ...rest }) {
                 <Chatlist>
                 {
                     [1, 2, 3, 4, 5, 6].map((_, index) => (
-                        <MessageCard
-                            key={index}
-                            active={index === 3}
-                            replied={index % 3 === 0}
-                            avatarSrc={face1}
-                            name="Tobias Williams"
-                            avatarStatus="online"
-                            statusText="online"
-                            time="3h ago"
-                            message="Do not, for one repulse, forgo the purpose that you resolved to effort."
-                            unreadCount={2}
-                        />
+                        <animated.div key={index} style={trailAnimes[index]} >
+                            <MessageCard
+                                key={index}
+                                active={index === 3}
+                                replied={index % 3 === 0}
+                                avatarSrc={face1}
+                                name="Tobias Williams"
+                                avatarStatus="online"
+                                statusText="online"
+                                time="3h ago"
+                                message="Do not, for one repulse, forgo the purpose that you resolved to effort."
+                                unreadCount={2}
+                            />                            
+                        </animated.div>
+
                     ))
                 }
                 </Chatlist>

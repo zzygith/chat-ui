@@ -10,10 +10,10 @@ import {ReactComponent as Call} from "../../assests/icons/call.svg"
 import {ReactComponent as Camera}from "../../assests/icons/camera.svg"
 import {ReactComponent as Options} from "../../assests/icons/options.svg"
 
-function TitleBar({children, ...rest }) {
+function TitleBar({ onAvatarClick, children, ...rest }) {
     return (
         <StyledTitleBar {...rest} >
-            <Avatar status="offline" src={face3} />
+            <Avatar onClick={onAvatarClick} status="offline" src={face3} />
             <Title>
                 <Paragraph size="large">Donald Johnson</Paragraph>
                 <Paragraph type="secondary">

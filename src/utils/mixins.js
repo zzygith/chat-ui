@@ -8,6 +8,7 @@ export const activeBar = ({barWidth='8px', shadowWidth='20px'}={}) => css`
     position: absolute;
     height: 100%;
     left:0;
+    transition: 0.4s;
 }
 &::before{
     width:${barWidth};

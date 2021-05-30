@@ -10,7 +10,7 @@ align-self:end;
 justify-self: start;
 `;
 
-const FileName = styled(Heading).attrs({ level: "3" })`
+const FileName = styled(Heading).attrs({ level: 3 })`
   grid-area: name;
   align-self: center;
 `;

@@ -6,6 +6,7 @@ import Switch from '../Switch'
 import Icon from '../Icon'
 import Seperator from "../Seperator"
 import {ReactComponent as ArrowMenuRight} from "../../assests/icons/arrowMenuRight.svg"
+import { Link } from 'react-router-dom'
 
 
 function Settings({children, ...rest }) {
@@ -24,7 +25,12 @@ function Settings({children, ...rest }) {
         <SettingsItem label="Voice and video call alerts" />
         <SettingsItem label="Show notification details" />
         <SettingsItem label="Sound" />
-        <SettingsItem label="View the list of muted friends" type="menu" />
+                
+        <Link to={'/settings/blocked'} style={{textDecoration:"none", color:"inherit"}} >
+            <SettingsItem label="View the list of muted friends" type="menu" />                    
+        </Link>
+
+        
       </SettingsGroup>
     </StyledSettings>
     )

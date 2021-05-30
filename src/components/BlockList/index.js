@@ -6,12 +6,14 @@ import Text from '../Text'
 import { ReactComponent as ArrowMenuLeft } from "../../assests/icons/arrowMenuLeft.svg"
 import { ReactComponent as closeCircle } from "../../assests/icons/closeCircle.svg"
 import face3 from '../../assests/images/face-male-3.jpg'
+import { useHistory } from 'react-router'
 
 function BlockList({ ...rest }) {
+    const history = useHistory();
     return (
         <StyledBlockList {...rest} >
             <SettingsMenu>
-                <Icon icon={ArrowMenuLeft} style={{ cursor: "pointer" }} />
+                <Icon icon={ArrowMenuLeft} style={{ cursor: "pointer" }} onClick={()=>history.goBack()} />
                 <Text size="xxlarge">Muted friends</Text>
             </SettingsMenu>
 
@@ -27,11 +29,6 @@ function BlockList({ ...rest }) {
 
             </FriendList>
 
-            <ClosableAvatar>
-                <BlockedAvatar size="105px" src={face3} />
-                <CloseIcon width={46} height={51} icon={closeCircle} />
-                <BlockedName>qq</BlockedName>
-            </ClosableAvatar>
         </StyledBlockList>
     )
 }

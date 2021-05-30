@@ -6,10 +6,10 @@ import ChatBubble from '../ChatBubble'
 import VoiceMessage from '../VoiceMessage'
 import Footer from '../Footer'
 
-function Conversation({ ...rest }) {
+function Conversation({ onAvatarClick, ...rest }) {
     return (
         <StyledConversation {...rest} >
-            <TitleBar/>
+            <TitleBar onAvatarClick={onAvatarClick}/>
             <Conversations>
                 <ChatBubble time="Yesterday 14:26PM">Hi Alex! What's up?</ChatBubble>
                 <MyChatBubble time="Yesterday 14:38PM">Oh, hello! All perfectly. I work, study and know this wonderful world!</MyChatBubble>

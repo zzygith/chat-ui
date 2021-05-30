@@ -18,6 +18,10 @@ const Content = styled.main`
 
 const Drawer = styled.div`
     max-width:310px;
+    width:0;
+    ${props => props.show && css`
+        width:310px;
+    ` }
 `;
 
 const StyledChatApp = styled.div`

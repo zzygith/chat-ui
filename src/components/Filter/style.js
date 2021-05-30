@@ -14,7 +14,7 @@ const Action = styled.div`
 
 const StyledFilter = styled.div`
     display:grid;
-    grid-template-columns:2fr 1fr;
+    grid-template-columns:1fr 1fr;
     align-items:center;
 `;
 export default StyledFilter;

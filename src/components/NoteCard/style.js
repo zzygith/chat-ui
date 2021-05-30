@@ -10,7 +10,7 @@ const NoteImage = styled.img`
     
 `;
 
-const NoteTitle = styled(Heading).attrs({ level: 4 })`
+const NoteTitle = styled(Heading).attrs({ level: 3 })`
     grid-area: title;
     margin:0;
     align-self: center;
