@@ -6,7 +6,7 @@ import StyledAvatar, {StatusIcon, AvatarClip, AvatarImage} from './style'
 function Avatar({ src, size = '48px', status, StatusIconSize = '8px', ...rest }) {
     return (
         <StyledAvatar {...rest} >
-            { status && (<StatusIcon status={status} size={StatusIconSize}></StatusIcon>)}
+            { status && (<StatusIcon status={status} size={StatusIconSize}></StatusIcon>)} {/* When status isn't given, don't show StatusIcon. This is for Profile, where don't need StatusIcon. */}
             <AvatarClip size={size}><AvatarImage src={src} alt="" /></AvatarClip>
         </StyledAvatar>
     )

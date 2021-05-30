@@ -27,7 +27,7 @@ function Profile({showEditBtn, onCloseClick, showCloseIcon=true, onEdit, status,
             <ContactSection>
                 <Description label="Phone"> +(331) 45550110</Description>
                 <Description label="E-mail"> info@uxdesigner.im</Description>
-                <Description label="DOB"> 14.05.1992</Description>
+                <Description label="DOB"> May.5 1992</Description>
             </ContactSection>
             <Seperator style={{ margin: "20px" }} />
             <AlbumSection>

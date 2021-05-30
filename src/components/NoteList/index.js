@@ -4,7 +4,8 @@ import StyledNoteList, { Notes } from './style'
 import FilterList from '../FilterList'
 import NoteCard from '../NoteCard'
 import useStaggeredList from '../../hooks/useStaggeredList'
-import {animated} from 'react-spring'
+import { animated } from 'react-spring'
+import noteData from '../../data/notes'
 
 function NoteList({ ...rest }) {
     const trailAnimes = useStaggeredList(10);
@@ -12,9 +13,9 @@ function NoteList({ ...rest }) {
         <StyledNoteList {...rest} >
             <FilterList options={["Latest First", "Modified First"]} actionLabel="Add New Notes" >
                 <Notes>
-                    {new Array(10).fill(0).map((_, i) => (
-                        <animated.div key={i} style={trailAnimes[i]}>
-                            <NoteCard key={i} />
+                    {noteData.map((note, i) => (
+                        <animated.div key={note.id} style={trailAnimes[i]}>
+                            <NoteCard key={note.id} note={note} />
                         </animated.div>
                         
                     

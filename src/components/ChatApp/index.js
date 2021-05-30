@@ -42,7 +42,6 @@ function ChatApp({ ...rest }) {
             </Sidebar>
             <Content>
                 <Switch>
-
                     <Route exact path="/settings">
                         <Settings />
                     </Route>

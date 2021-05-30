@@ -14,6 +14,7 @@ import face1 from "../../assests/images/face-male-1.jpg"
 import FilterList from '../FilterList'
 import {animated} from 'react-spring'
 import useStaggeredList from '../../hooks/useStaggeredList';
+import messageDate from '../../data/messages'
 
 function MessageList({ children, ...rest }) {
     const trailAnimes = useStaggeredList(6);
@@ -23,19 +24,19 @@ function MessageList({ children, ...rest }) {
             <FilterList options={ ["Latest First", "Online First"] } actionLabel="Add New">
                 <Chatlist>
                 {
-                    [1, 2, 3, 4, 5, 6].map((_, index) => (
-                        <animated.div key={index} style={trailAnimes[index]} >
+                    messageDate.map((message, index) => (
+                        <animated.div key={message.id} style={trailAnimes[index]} >
                             <MessageCard
-                                key={index}
+                                key={message.id}
                                 active={index === 3}
-                                replied={index % 3 === 0}
-                                avatarSrc={face1}
-                                name="Tobias Williams"
-                                avatarStatus="online"
-                                statusText="online"
-                                time="3h ago"
-                                message="Do not, for one repulse, forgo the purpose that you resolved to effort."
-                                unreadCount={2}
+                                replied={message.replied}
+                                avatarSrc={message.avatarSrc}
+                                name={message.name}
+                                avatarStatus={message.status}
+                                statusText={message.statusText}
+                                time={message.time}
+                                message={message.message}
+                                unreadCount={message.unreadCount}
                             />                            
                         </animated.div>
 

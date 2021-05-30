@@ -11,6 +11,7 @@ justify-self: start;
 `;
 
 const FileName = styled(Heading).attrs({ level: 3 })`
+  margin:0;
   grid-area: name;
   align-self: center;
 `;
