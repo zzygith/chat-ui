@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 const Contacts = styled.div`
-    margin-top: -8px;
+    margin-top: -8px;   // Recover the margin-top of first element.
     &>*{
         margin:8px 0;
     }

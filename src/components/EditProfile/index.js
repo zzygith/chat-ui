@@ -22,7 +22,6 @@ function EditProfile({ children, ...rest }) {
                 showEditBtn
                 showCloseIcon={false}
             />  
-
       );
     }
     return (

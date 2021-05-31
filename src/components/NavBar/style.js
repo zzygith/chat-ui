@@ -4,26 +4,24 @@ import { activeBar } from '../../utils/mixins';
 import StyledAvatar, {StatusIcon} from '../Avatar/style';
 
 const StyledMenuItem = styled.div`
-& > a {
-    width:100%;
-    height:74px;
-    display: flex;  
-    align-items: center;    
-    justify-content: center;
-    ${activeBar()};
-    ${(props) => (props.active ? "" : `::before,::after {height:0}`)};
-    &:hover{
-      ::before,::after{
-        height: 100%;
-      };
-    svg{
-      transform: scale(1.2);
-      opacity: 1;
-
-    };
-
-    }
-}
+  & > a {
+      width:100%;
+      height:74px;
+      display: flex;  
+      align-items: center;    
+      justify-content: center;
+      ${activeBar()};
+      ${(props) => (props.active ? "" : css`::before,::after {height:0}`)};
+      &:hover{
+        ::before,::after{
+          height: 100%;
+        };
+      svg{
+        transform: scale(1.2);
+        opacity: 1;
+        };
+      }
+  }
 `;
 
 const MenuIcon = styled(FontAwesomeIcon)`
@@ -34,16 +32,14 @@ const MenuIcon = styled(FontAwesomeIcon)`
   transition: 0.4s;
 `;
 
-
-
 const StyledNavBar = styled.nav`
-  display: grid;             //grid网格化布局
-  grid-template-rows: 1fr 4fr;     //让第一行占五份一，第二行占五份4，同类还有grid-template-columns
+  display: grid;             //grid layout
+  grid-template-rows: 1fr 4fr;
   width: 100px;
   height: 100vh;
   background-color:#292F4C;
 
-  ${StyledAvatar} {    //设置StyledNavBar里面Avatar的样式，就是选中styled-component包装过得组件，不是avatar本身（因为从本质上讲，avatar组件执行后返回了一堆styled组件，其实是不存在avatar组件的）
+  ${StyledAvatar} {
     justify-self: center;
     align-self: center;
     ${StatusIcon} {

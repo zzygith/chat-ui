@@ -1,25 +1,25 @@
 import styled, { css } from 'styled-components'
 
-
+/* Circle button or rect button */
 const shapeVariant = {
     circle: css`
-    width:${props => props.size};
-    height:${props => props.size};
-    border-radius:50%;
-    display:inline-flex;
-    align-items:center;
-    justify-content:center
+        width:${props => props.size};
+        height:${props => props.size};
+        border-radius:50%;
+        display:inline-flex;
+        align-items:center;
+        justify-content:center
     `,
     rect: css`
-    padding:12px 18px;
-    border-radius:6px;
+        padding:12px 18px;
+        border-radius:6px;
     `
 }
 
 const typeVariant = {
     primary: css`
-    background-color:${props => props.theme.primaryColor};
-    color:white;
+        background-color:${props => props.theme.primaryColor};
+        color:white;
     `
 }
 

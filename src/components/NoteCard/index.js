@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import StyledNoteCard, { NoteExcerpt, NoteImage, NotePublishTime, NoteTitle } from './style'
 import note1 from '../../assests/images/note-1.jpg'
 
+/* Process the received data like JSON. */
 function NoteCard({note, ...rest }) {
     return (
         <StyledNoteCard {...rest} >

@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import StyledText from '../Text/style';
 
-const StyledParagraph = styled(StyledText)` //继承Text组件并新添一些样式
+const StyledParagraph = styled(StyledText)` // Inherit Text component and add some new styles
 ${props => props.ellipsis && css`
 text-overflow:ellipsis;
 white-space:nowrap;

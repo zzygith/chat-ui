@@ -3,7 +3,7 @@ import Option from "."
 
 
 export default {
-    title: "Option",
+    title: "UI/Option",
     component: Option
 };
 

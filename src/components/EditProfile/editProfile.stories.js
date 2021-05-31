@@ -3,7 +3,7 @@ import EditProfile from "."
 
 
 export default {
-    title: "EditProfile",
+    title: "Page/EditProfile",
     component: EditProfile
 };
 

@@ -15,9 +15,7 @@ const InputUnderline = styled.input`
     :focus, :hover{
         border-bottom-color: ${props=>props.theme.primaryColor};
     }
-
 `;
-
 
 const StyledInputText = styled.div`
 `;

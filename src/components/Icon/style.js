@@ -12,8 +12,7 @@ svg *{
      ${props=>(props.opacity?`opacity:${props.opacity}`:"")};
 }
 
-// 如果传入值，则重新设置为传入值，否则使用默认值。下面的做法是自己用的，存在修改默认值问题
-
+// If there is new passed-in value, then reset as the passed-in value. Otherwise use the default. Below is wrong. 
 /* svg,
 svg *{
      fill:${props=>(props.color?props.color:"none")};

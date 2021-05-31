@@ -3,7 +3,7 @@ import NoteList from "."
 
 
 export default {
-    title: "NoteList",
+    title: "Page/NoteList",
     component: NoteList
 };
 

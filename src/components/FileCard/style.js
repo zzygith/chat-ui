@@ -5,9 +5,9 @@ import Paragraph from '../Paragraph';
 import { card } from '../../utils/mixins'
 
 const FileIcon = styled(Icon).attrs({ width: "60", height: "60" })`
-grid-area: icon;
-align-self:end;
-justify-self: start;
+  grid-area: icon;
+  align-self:end;
+  justify-self: start;
 `;
 
 const FileName = styled(Heading).attrs({ level: 3 })`
@@ -17,7 +17,7 @@ const FileName = styled(Heading).attrs({ level: 3 })`
 `;
 
 const FileSize = styled(Paragraph).attrs({ type: "secondary" })`
-grid-area: size;
+  grid-area: size;
 `;
 
 const Time = styled(Paragraph).attrs({ type: "secondary" })`

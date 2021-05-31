@@ -22,6 +22,7 @@ const fileIcons = {
     ppt: FilePpt, 
   };
 
+/* Process the received data like JSON. */
 function FileCard({file, ...rest }) {
     return (
         <StyledFileCard {...rest} >

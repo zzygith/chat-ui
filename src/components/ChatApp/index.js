@@ -11,11 +11,22 @@ import Conversation from '../Conversation'
 import Profile from '../Profile'
 import Settings from '../Settings'
 import BlockList from '../BlockList'
-import { Route, Switch } from 'react-router'
+import { Route, Switch, useLocation } from 'react-router'
+import { useTransition } from '@react-spring/core'
 
 
 function ChatApp({ ...rest }) {
     const [showDrawer, setShowDrawer] = useState(false);
+    const location = useLocation();
+
+    const getFirstSgmtPath = location => location.pathname.split("/")[1];
+    console.log(location);
+/*     const transitions = useTransition(location, getFirstSgmtPath, {
+      from: { opacity: 0, transform: "translate3d(-100px, 0, 0)" },
+      enter: { opacity: 1, transform: "translate3d(0, 0, 0)" },
+      leave: { opacity: 0, transform: "translate3d(-100px, 0, 1)" },
+    }); */
+    
     return (
         <StyledChatApp {...rest} >
             <Nav>

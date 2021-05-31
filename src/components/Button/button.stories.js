@@ -5,7 +5,7 @@ import Icon from "../Icon/index"
 
 
 export default {
-    title: "Button",
+    title: "UI/Button",
     component: Button
 };
 

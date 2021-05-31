@@ -16,9 +16,7 @@ function NoteList({ ...rest }) {
                     {noteData.map((note, i) => (
                         <animated.div key={note.id} style={trailAnimes[i]}>
                             <NoteCard key={note.id} note={note} />
-                        </animated.div>
-                        
-                    
+                        </animated.div>                   
                     ))}
                 </Notes>
             </FilterList>

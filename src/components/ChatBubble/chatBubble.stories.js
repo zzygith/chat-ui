@@ -4,7 +4,7 @@ import VoiceMessage from "../VoiceMessage"
 
 
 export default {
-    title: "ChatBubble",
+    title: "UI/ChatBubble",
     component: ChatBubble
 };
 

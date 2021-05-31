@@ -1,13 +1,13 @@
 import styled, { css } from 'styled-components'
 import ChatBubble from '../ChatBubble'
 
-// Containner for all Conversation
+/* Containner for all Conversation */
 const Conversations = styled.div`
     padding:10px 15px;
     display:flex;
     flex-direction:column;
     align-items:flex-start;
-    width:cal(100%-30px);
+    width:cal(100%-30px);   // Reduce the left and right padding.
     overflow-y:auto;
     flex:1;
     &>*{
@@ -25,7 +25,7 @@ flex-direction: column;
 height:100vh;
 border:1px solid ${props => props.theme.gray4};
 &>*:last-child{
-    align-self:flex-end;
+    align-self:flex-end;    // Set the footer at the end.
 }
 
 `;

@@ -13,13 +13,13 @@ function Footer({children, ...rest }) {
         <StyledFooter {...rest} >
             <Input
                 placeholder="Type a message here..."
-                prefix={<Icon icon={ClipIcon} />}
+                prefix={<Icon icon={ClipIcon} />}   // prefix icon
                 suffix={<IconContainer>
                             <Icon icon={MicrophoneIcon} />
                             <Button>
-                                <Icon icon={PlaneIcon} color="white" styled={{transfrom:"translateX(-2px)"}} />
+                                <Icon icon={PlaneIcon} color="white" styled={{transform:"translateX(-2px)"}} />
                             </Button>
-                        </IconContainer>}
+                        </IconContainer>}   // suffix icon
             />
         </StyledFooter>
     )

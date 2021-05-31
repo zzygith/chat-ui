@@ -29,7 +29,7 @@ const MessageText = styled(Text)`
 
 `;
 
-// Set style for the ChatBubble sent by user-self.
+/* Set style for the ChatBubble sent by user-self. */
 const typeVariants = {
     mine: css`
         ${Bubble}{
@@ -51,7 +51,6 @@ const typeVariants = {
         ${MessageText}{
             color: white;
         };
-
     `
 
 }

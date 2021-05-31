@@ -3,7 +3,7 @@ import FileList from "."
 
 
 export default {
-    title: "FileList",
+    title: "Page/FileList",
     component: FileList
 };
 

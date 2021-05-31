@@ -17,8 +17,6 @@ function FileList({ ...rest }) {
                         <animated.div key={file.id} style={trailAnimes[i]}>
                             <FileCard key={file.id} file={file} />
                         </animated.div>
-                       
-                    
                     )
                 )}
                 </Files>

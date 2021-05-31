@@ -3,7 +3,7 @@ import Conversation from "."
 
 
 export default {
-    title: "Conversation",
+    title: "Page/Conversation",
     component: Conversation
 };
 

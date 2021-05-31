@@ -3,7 +3,7 @@ import ContactCard from "."
 
 
 export default {
-    title: "ContactCard",
+    title: "UI/ContactCard",
     component: ContactCard
 };
 

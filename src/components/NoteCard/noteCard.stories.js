@@ -3,7 +3,7 @@ import NoteCard from "."
 
 
 export default {
-    title: "NoteCard",
+    title: "UI/NoteCard",
     component: NoteCard
 };
 

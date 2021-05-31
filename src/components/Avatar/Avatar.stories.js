@@ -7,7 +7,7 @@ import face4 from '../../assests/images/face-male-4.jpg'
 import './story.css'
 
 export default {
-    title: 'Avatar',
+    title: 'UI/Avatar',
     component: Avatar
 };
 

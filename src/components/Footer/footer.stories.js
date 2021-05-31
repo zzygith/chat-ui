@@ -3,7 +3,7 @@ import Footer from "."
 
 
 export default {
-    title: "Footer",
+    title: "Page/Footer",
     component: Footer
 };
 

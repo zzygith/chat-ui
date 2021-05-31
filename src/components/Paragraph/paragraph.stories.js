@@ -3,7 +3,7 @@ import Paragraph from "."
 
 
 export default {
-    title: "Paragraph",
+    title: "UI/Paragraph",
     component: Paragraph
 };
 

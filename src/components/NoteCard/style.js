@@ -19,7 +19,7 @@ const NoteTitle = styled(Heading).attrs({ level: 3 })`
 const NoteExcerpt = styled(Paragraph).attrs({ size: "small" })`
     grid-area: excerpt;
     align-self: center;
-    white-space:nowrap;
+    white-space:nowrap;     //Show the content in one line.
     text-overflow: ellipsis;
     overflow: hidden;
 `;
@@ -28,7 +28,6 @@ const NotePublishTime = styled(Paragraph).attrs({ type: "secondary" })`
     grid-area: time;
     justify-self: end;
 `;
-
 
 const StyledNoteCard = styled.div`
     ${card()};

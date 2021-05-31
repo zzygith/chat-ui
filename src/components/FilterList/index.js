@@ -9,6 +9,7 @@ import Button from '../Button'
 import Icon from '../Icon'
 import { ReactComponent as Plus } from "../../assests/icons/plus.svg";
 
+/* Different components like FileList, MessageList need different contents. */
 function FilterList({children, options,actionLabel, filterLabel="Sort By", ...rest }) {
     return (
         <StyledFilterList {...rest} >
@@ -27,8 +28,6 @@ function FilterList({children, options,actionLabel, filterLabel="Sort By", ...re
                     </Button>
                 </Filter.Action>)}
             </Filter>
-
-
            {children}
         </StyledFilterList>
     )

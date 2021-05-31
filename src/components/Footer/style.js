@@ -9,12 +9,10 @@ const IconContainer = styled.div`
     }
 `;
 
-
 const StyledFooter = styled.footer`
     padding: 12px 0px;
     height:60px;
     width:100%
-
 `;
 export default StyledFooter;
 export {IconContainer}

@@ -5,7 +5,7 @@ import "styled-components/macro"
 
 
 export default {
-    title: "NavBar",
+    title: "Page/NavBar",
     component: NavBar
 };
 

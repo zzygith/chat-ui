@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components'
 
 const Files = styled.div`
-
     margin-top: -8px;
     &>*{
         margin:8px 0;

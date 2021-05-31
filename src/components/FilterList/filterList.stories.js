@@ -3,7 +3,7 @@ import FilterList from "."
 
 
 export default {
-    title: "FilterList",
+    title: "Page/FilterList",
     component: FilterList
 };
 

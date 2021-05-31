@@ -15,7 +15,7 @@ margin-top:20px
 `;
 
 const CloseIcon = styled(Icon)`
-    grid-area:2/3/5/4;
+    grid-area:2/3/5/4;  // Show at the right bottom corner.
     margin-top:20px;
     z-index:10;
 `;
@@ -33,7 +33,7 @@ const ClosableAvatar = styled.div`
 const SettingsMenu = styled.div`
     height:148px;
     display:grid;
-    grid-template-columns: 10px 1fr;
+    grid-template-columns: 10px 1fr;    //Left is for back icon, right is for menu name
     align-items: center;
     ${StyledText}{
         justify-self:center;

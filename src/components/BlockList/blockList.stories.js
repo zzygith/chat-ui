@@ -3,7 +3,7 @@ import BlockList from "."
 
 
 export default {
-    title: "BlockList",
+    title: "Page/BlockList",
     component: BlockList
 };
 

@@ -5,7 +5,7 @@ import Badge from "."
 
 
 export default {
-    title: "Badge",
+    title: "UI/Badge",
     component: Badge
 };
 

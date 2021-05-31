@@ -16,11 +16,11 @@ import {animated} from 'react-spring'
 import useStaggeredList from '../../hooks/useStaggeredList';
 import messageDate from '../../data/messages'
 
+/* Process the received data like JSON. */
 function MessageList({ children, ...rest }) {
     const trailAnimes = useStaggeredList(6);
     return (
         <StyledMessageList {...rest} >
-
             <FilterList options={ ["Latest First", "Online First"] } actionLabel="Add New">
                 <Chatlist>
                 {
@@ -39,7 +39,6 @@ function MessageList({ children, ...rest }) {
                                 unreadCount={message.unreadCount}
                             />                            
                         </animated.div>
-
                     ))
                 }
                 </Chatlist>

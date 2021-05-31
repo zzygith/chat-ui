@@ -3,7 +3,7 @@ import Profile from "."
 
 
 export default {
-    title: "Profile",
+    title: "Page/Profile",
     component: Profile
 };
 

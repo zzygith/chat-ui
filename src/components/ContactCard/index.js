@@ -4,6 +4,7 @@ import StyledContactCard, { Intro, Name } from './style'
 import Avatar from '../Avatar'
 import face4 from '../../assests/images/face-male-4.jpg'
 
+/* Process the received data like JSON. */
 function ContactCard({contact, ...rest }) {
     return (
         <StyledContactCard {...rest} >

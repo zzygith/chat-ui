@@ -3,7 +3,7 @@ import Heading from "."
 
 
 export default {
-    title: "Heading",
+    title: "UI/Heading",
     component: Heading
 };
 

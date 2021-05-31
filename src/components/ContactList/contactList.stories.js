@@ -3,7 +3,7 @@ import ContactList from "."
 
 
 export default {
-    title: "ContactList",
+    title: "Page/ContactList",
     component: ContactList
 };
 

@@ -2,7 +2,7 @@ import React from 'react'
 import Input from "."
 
 export default {
-    title: "Input",
+    title: "Page/Input",
     component: Input
 };
 

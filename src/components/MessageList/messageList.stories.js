@@ -3,7 +3,7 @@ import MessageList from "."
 
 
 export default {
-    title: "MessageList",
+    title: "Page/MessageList",
     component: MessageList
 };
 

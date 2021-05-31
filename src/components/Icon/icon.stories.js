@@ -4,7 +4,7 @@ import {ReactComponent as SmileIcon} from "../../assests/icons/smile.svg"
 
 
 export default {
-    title: "Icon",
+    title: "UI/Icon",
     component: Icon
 };
 
