@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import StyledChatApp, { Content, Drawer, Nav, Sidebar } from './style'
+import face3 from "../../assests/images/face-male-3.jpg"
 import NavBar from '../NavBar'
 import MessageList from '../MessageList'
 import ContactList from '../ContactList'
@@ -73,7 +74,7 @@ function ChatApp({ ...rest }) {
                 </Switch>
             </Content>
             <Drawer show={showDrawer}>
-                <Profile onCloseClick={()=>setShowDrawer(false)} />
+                <Profile face={face3} name="Donald Johnson" onCloseClick={()=>setShowDrawer(false)} />
             </Drawer>
         </StyledChatApp>
     )

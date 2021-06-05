@@ -6,7 +6,7 @@ import Avatar from '../Avatar';
 import Button from '../Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
-import face from '../../assests/images/face-male-1.jpg'
+import face1 from '../../assests/images/face-male-1.jpg'
 import InputText from '../Input/InputText';
 import LabelContainer from '../LabelContainer';
 import Select from '../Select';
@@ -21,12 +21,14 @@ function EditProfile({ children, ...rest }) {
                 onEdit={() => setShowEdit(true)}
                 showEditBtn
                 showCloseIcon={false}
+                face={face1}
+                name="Theodore Roosevelt"
             />  
       );
     }
     return (
         <StyledEditProfile {...rest}>
-            <Avatar src={face} size="160px" style={{
+            <Avatar src={face1} size="160px" style={{
                 gridArea: "1/1/2/2",
                 justifySelf: "center",
                 marginTop:"12px"

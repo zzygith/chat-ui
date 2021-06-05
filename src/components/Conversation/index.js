@@ -17,7 +17,7 @@ function Conversation({ onAvatarClick, ...rest }) {
                     <VoiceMessage time="01:24"/>
                 </ChatBubble>
                 <MyChatBubble time="Today 06:18AM">
-                    I remember everything mate. See you later.
+                    I remember everything. See you later.
                 </MyChatBubble>
             </Conversations>
             <Footer/>
