@@ -4,7 +4,7 @@ import StyledProfile, {ContactSection, AlbumSection, AlbumTitle, Album, Photo, C
 import Avatar from '../Avatar'
 import Paragraph from '../Paragraph'
 import Seperator from '../Seperator'
-import face from '../../assests/images/face-male-3.jpg'
+import face from '../../assests/images/face-male-1.jpg'
 import Text from '../Text'
 import photo1 from '../../assests/images/photo1.jpg'
 import photo2 from '../../assests/images/photo2.jpg'
@@ -18,9 +18,9 @@ function Profile({showEditBtn, onCloseClick, showCloseIcon=true, onEdit, status,
     return (
         <StyledProfile {...rest} >
             {showCloseIcon && <CloseIcon icon={Cross} onClick={onCloseClick}/>}
-            <Avatar style={{ margin: "26px 0" , gridArea:"1/1/3/2"}} src={face} size="110px" status={status} StatusIconSize="25px" />
+            <Avatar style={{ margin: "26px 0" , gridArea:"1/1/3/2" }} src={face} size="110px" status={status} StatusIconSize="25px" />
             {showEditBtn && <Button size="52px" onClick={onEdit} style={{gridArea:"1/ 1/ 3/ 2", alignSelf:"end", marginLeft:"100px", zIndex:"10"}}><FontAwesomeIcon style={{fontSize: "24px"}} icon={faPen} /></Button>}
-            <Paragraph style={{ marginBottom: "12px" }} size="xlarge">Donald Johnson</Paragraph>
+            <Paragraph style={{ marginBottom: "12px" }} size="xlarge">Theodore Roosevelt</Paragraph>
             <Paragraph style={{marginBottom:"18px"}} size="medium" type="secondary">Paris, France</Paragraph>
             <Paragraph style={{ marginBottom: "26px" }}>Help people to build websites and apps + grow awareness in social media</Paragraph>
             <Seperator style={{ margin: "20px" }} />

@@ -15,7 +15,9 @@ export const Defualt = () => {
     return <Avatar src={face1} status="online" />;
 }
 
-// Show different Avatar with different sizes.
+
+
+// Show different Avatars with different sizes.
 export const Sizes = () => {
     return (
     <div className="row-elements">

@@ -6,7 +6,7 @@ import Avatar from '../Avatar';
 import Button from '../Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
-import face from '../../assests/images/face-male-3.jpg'
+import face from '../../assests/images/face-male-1.jpg'
 import InputText from '../Input/InputText';
 import LabelContainer from '../LabelContainer';
 import Select from '../Select';
