@@ -29,12 +29,7 @@ function FileCard({file, ...rest }) {
            <FileIcon icon={fileIcons[file.type]} />
            <FileName>{file.name}</FileName>
             <FileSize>{file.size}</FileSize>
-
             <Time>{file.updatedAt}</Time>
-           
-            <Time>May,03 2021</Time>
-
-
         </StyledFileCard>
     )
 }
